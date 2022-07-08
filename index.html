@@ -4,20 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>repl.it</title>
+  <title>To-Do List</title>
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <div class="container">
     <h2>To Do List App</h2>
-    <p><em> Double click to mark an item off, click on "X" to delete an item, and drag items to reorder.</em></p>
+    <p><em> 
+      Press Ctrl+Enter or click the "Add" button to add new tasks. 
+      Double click to mark an item off, 
+      click on "X" to delete an item 
+      and drag items to reorder.
+    </em></p>
 
     <form name="toDoList">
-      <input type="text" name="ListItem" id="input" />
+      <textarea type="text" name="ListItem" id="input" autofocus></textarea>
     </form>
 
-    <div onclick="newItem()" id="button">Add</div>
+    <div onclick="todoList.newItem()" id="button">Add</div>
     <br />
     <ol id="list"></ol>
   </div>
