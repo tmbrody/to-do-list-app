@@ -14,12 +14,18 @@ body {
   border-radius: 5px;
 }
 
+.container h2 {
+  text-align: center;
+}
+
 form {
   display: inline-block;
 }
 
-input {
-  padding: 4px 15px 4px 5px;
+#input {
+  width: 22em;
+  height: 15em;
+  resize: none;
 }
 
 #button {
@@ -29,7 +35,9 @@ input {
   border-radius: 5px;
   text-align: center;
   margin-top: 2px;
+  margin-left: 60px;
   padding: 5px 15px;
+  min-width: 50%;
 }
 
 #button:hover {
@@ -44,6 +52,7 @@ ol {
 ol li {
   padding: 5px;
   color: #000;
+  word-wrap: break-word;
 }
 
 ol li:nth-child(even) {
@@ -67,5 +76,30 @@ li>crossOutButton {
   border: none;
   float: right;
   color: #025f70;
-  font-weight: 800;
+  font-weight: 900;
+  min-width: 5%;
+  text-align: center;
+}
+
+li>crossOutButton:hover {
+  background-color: #ffffff;
+}
+
+.grey-hover:hover {
+  background-color: #e7e7e7;
+}
+
+@media all and (max-width: 350px) {
+  .container {
+    width: 100px;
+  }
+
+  #input {
+    width: 8em;
+    height: 12em;
+  }
+
+  #button {
+    margin-left: 1em;
+  }
 }
